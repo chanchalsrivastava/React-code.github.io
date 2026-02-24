@@ -31,10 +31,10 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Support</h3>
           <ul>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Shipping</a></li>
-            <li><a href="">Returns</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li><a href="/">FAQ</a></li>
+            <li><a href="/">Shipping</a></li>
+            <li><a href="/">Returns</a></li>
+            <li><a href="/">Privacy Policy</a></li>
           </ul>
         </div>
 
