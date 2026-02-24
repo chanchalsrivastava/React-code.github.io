@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -30,12 +30,12 @@ const Footer = () => {
         {/* Support */}
         <div className="footer-col">
           <h3>Support</h3>
-          <ul>
-            <li><a href="/">FAQ</a></li>
-            <li><a href="/">Shipping</a></li>
-            <li><a href="/">Returns</a></li>
-            <li><a href="/">Privacy Policy</a></li>
-          </ul>
+<ul>
+  <li><Link to="/">FAQ</Link></li>
+  <li><Link to="/">Shipping</Link></li>
+  <li><Link to="/">Returns</Link></li>
+  <li><Link to="/">Privacy Policy</Link></li>
+</ul>
         </div>
 
         {/* Newsletter */}
