@@ -1,0 +1,64 @@
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+    background-size: cover;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Breadcrumb styling */
+.page-header .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.page-header .breadcrumb a:hover {
+    text-decoration: underline;
+    color: #ffc107; /* Bootstrap warning color */
+}
+
+/* Responsive heading */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+.contact {
+  background: #f8f9fa;
+}
+
+.contact h1,
+.contact h4,
+.contact h5,
+.contact p {
+  /* Optional smooth font animations */
+  transition: all 0.3s ease-in-out;
+}
+
+.form-floating input,
+.form-floating textarea {
+  background-color: #fff;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}

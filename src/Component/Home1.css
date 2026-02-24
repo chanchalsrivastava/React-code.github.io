@@ -1,0 +1,315 @@
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+  height: 90vh;
+  background: url("../../public/assets/back1.jpg") no-repeat center center/cover;
+  position: relative;
+
+}
+
+.hero-overlay {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.4)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  margin-left: 10%;
+  animation: fadeUp 1.5s ease;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.hero-btn:hover {
+  background: #ff4757;
+  transform: translateY(-5px);
+}
+
+
+
+
+
+/* ===== PRODUCTS ===== */
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+  background: linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%);
+}
+
+.product-card {
+  width: 220px;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Hover Animation: scale + shadow + pop */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+/* Button Styling */
+.product-card button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+}
+
+/* Wishlist Icon */
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  color: #ff4757;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wishlist-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Fade In + Slide Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card button:hover {
+  background: #ff6b6b;
+}
+
+/* ===== OFFER ===== */
+
+.offer-section {
+  margin-top: 60px;
+  padding: 80px 0;
+  background: linear-gradient(45deg, #111, #333);
+  color: white;
+  text-align: center;
+}
+
+.offer-content h2 {
+  font-size: 3rem;
+}
+
+.offer-content button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  transition: 0.4s;
+}
+
+.offer-content button:hover {
+  background: white;
+  color: black;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+/* Container for the white card */
+.column-container.bg-white {
+  background: #ffffff; /* Clean white background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column-container.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner padding */
+.collection-content {
+  padding: 40px 30px;
+}
+
+/* Title styling */
+.element-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Paragraph styling */
+.collection-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+.collection-content .btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.collection-content .btn:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 75, 43, 0.4);
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .collection-content {
+    padding: 30px 20px;
+  }
+  .element-title {
+    font-size: 24px;
+  }
+  .collection-content p {
+    font-size: 14px;
+  }
+}
+
+
+/* Container for the animated title */
+.title-xlarge {
+  text-align: center; /* Center text */
+  font-size: 48px;
+  font-weight: 900; /* Bold text */
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Each letter animation */
+.txt-fx .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: letterAnimation 0.6s forwards;
+}
+
+/* Animate letters one by one using transition-delay */
+.txt-fx .letter:nth-child(1) { color: #ff416c; }
+.txt-fx .letter:nth-child(2) { color: #ff4b2b; }
+.txt-fx .letter:nth-child(3) { color: #f9d423; }
+.txt-fx .letter:nth-child(4) { color: #1fa2ff; }
+.txt-fx .letter:nth-child(5) { color: #ff416c; }
+.txt-fx .letter:nth-child(6) { color: #ff4b2b; }
+.txt-fx .letter:nth-child(7) { color: #f9d423; }
+.txt-fx .letter:nth-child(8) { color: #1fa2ff; }
+.txt-fx .letter:nth-child(9) { color: #ff416c; }
+.txt-fx .letter:nth-child(10){ color: #ff4b2b; }
+
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) rotateX(90deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) rotateX(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

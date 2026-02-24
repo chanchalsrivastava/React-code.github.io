@@ -1,0 +1,230 @@
+
+.navbar {
+  position: fixed;    
+  top: 0;             
+  width: 100%;        
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95); 
+  backdrop-filter: blur(10px);          
+  transition: all 0.4s ease;           
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Logo */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #c59d5f !important;
+  transform: scale(1.05);
+}
+
+/* Nav Links */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  margin: 0 10px;
+  color: #333 !important;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #c59d5f !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #c59d5f, #111);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #c59d5f !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+.buttons .btn {
+  border-radius: 30px;
+  padding: 6px 18px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.buttons .btn:hover {
+  background: linear-gradient(90deg, #c59d5f, #111);
+  color: white !important;
+  border: none;
+  box-shadow: 0 4px 15px rgba(197, 157, 95, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== NAVBAR ICONS & DROPDOWNS ===== */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  position: relative; /* dropdowns absolute relative to this */
+  z-index: 1000;
+  font-size: 22px;
+}
+
+.navbar-icons .icon {
+  cursor: pointer;
+  position: relative; /* for badge & dropdown positioning */
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+/* Badge on icons */
+.navbar-icons .icon .badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* Cart Dropdown */
+.cart-dropdown {
+  position: absolute;
+  top: 40px; /* below cart icon */
+  right: 0;
+  width: 250px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 2000; /* above everything */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: block;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.cart-item-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart-item-info p,
+.cart-item-info small {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* User Dropdown */
+.user-dropdown {
+  position: absolute;
+  top: 40px; /* below user icon */
+  right: 0;
+  min-width: 150px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 2000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.user-dropdown p {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+.user-dropdown p:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mobile Menu Animation */
+.navbar-collapse {
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* Search Overlay */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Close Button */
+.close-search {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.close-search:hover {
+  color: #c59d5f;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form button {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  background: #c59d5f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-form button:hover {
+  background: #111;
+}
